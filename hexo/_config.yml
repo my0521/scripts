@@ -147,5 +147,5 @@ deploy:
   type: git
   #repo: https://github.com/my0521/my0521.github.io
   repo: git@github.com:my0521/my0521.github.io.git
-  branch: gh-pages
+  branch: main
   #message: 升级 hexo 版本至 v7.0.0
