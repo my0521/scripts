@@ -7,3 +7,7 @@ npm install                 #4.安装依赖
 npm install hexo-generator-searchdb --save
 
 git clone https://github.com/next-theme/hexo-theme-next themes/next
+
+
+wget https://github.com/my0521/scripts/blob/main/hexo/_config.yml -O _config.yml
+wget https://github.com/my0521/scripts/blob/main/hexo/themes/next/_config.yml -O themes/next/_config.yml
