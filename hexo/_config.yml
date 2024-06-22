@@ -21,9 +21,17 @@ search:
   content: true
   format: html
 
+# 生成 sitemap
+# npm install hexo-generator-sitemap --save
+# npm install hexo-generator-baidu-sitemap --save
+sitemap:
+  path: sitemap.xml
+# baidusitemap:
+#   path: baidusitemap.xml
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://my0521.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -51,9 +59,17 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
+# 使用 Markdown 嵌入图片 
+# marked:
+#   prependRoot: true
+#   postAsset: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
+# 代码块的设置, 请参考 Highlight.js 进行设置
+# 注意：某些主题可能做了改造，需要禁用主站 PrismJS 配置，代码块的设置, 请参考 PrismJS 进行设置
+# https://hexo.io/zh-cn/docs/syntax-highlight#Highlight-js
+# https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS
 highlight:
   line_number: true
   auto_detect: false
@@ -106,9 +122,30 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+# -------------------------------------------------------------------
+# 扩展
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# -------------------------------------------------------------------
+# 初次安装 hexo，默认配置主题为：theme: landscape
+# 主站配置选择主题，个人通过 npm install hexo-theme-next --save 形式安装
+# 配置方式是，theme: next
+#theme: fluid
 theme: next
+#theme: hexo-theme-next
+#theme: landscape
 
 # Deployment
+# -------------------------------------------------------------------
+# 一键发布至 github 仓库，需要安装插件：hexo-deployer-git
+# Deployment
+# npm install hexo-deployer-git --save
 ## Docs: https://hexo.io/docs/one-command-deployment
+# -------------------------------------------------------------------
 deploy:
-  type: ''
+  type: git
+  #repo: https://github.com/my0521/my0521.github.io
+  repo: git@github.com:my0521/my0521.github.io.git
+  branch: gh-pages
+  #message: 升级 hexo 版本至 v7.0.0

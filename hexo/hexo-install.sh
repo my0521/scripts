@@ -5,6 +5,7 @@ npm install                 #4.安装依赖
 # hexo server               #5.启动 hexo 服务
 
 npm install hexo-generator-searchdb --save
+npm install hexo-deployer-git --save
 
 git clone https://github.com/next-theme/hexo-theme-next themes/next
 
